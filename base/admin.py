@@ -4,6 +4,6 @@ from django.contrib import admin
 
 from .models import Room, Topic, Message
 
-admin.site.register(Room)
+admin.site.register(Room) #Basically commands the program that want to work on this model on the admin panel
 admin.site.register(Topic)
 admin.site.register(Message)

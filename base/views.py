@@ -43,7 +43,7 @@ def home(request):
         Q(topic__name__icontains=q) |
         Q(name__icontains=q) |
         Q(description__icontains=q)
-        )
+        ) #Query Sets
     
     topics = Topic.objects.all()
 
@@ -53,7 +53,7 @@ def home(request):
     return render(request, 'base/home.html', context)
 
 def room(request, pk):
-    room = Room.objects.get(id=pk)
+    room = Room.objects.get(id=pk) 
     context = {'room':room}
 
     return render(request, 'base/room.html', context) 
