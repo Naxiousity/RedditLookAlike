@@ -3,7 +3,7 @@
 {% block content %}
 
 <div>
-    <form method="POST" action=""></form>
+    <form method="POST" action="">
         {% csrf_token %}
 
         <label>Username:</label>
@@ -13,6 +13,7 @@
         <input type="password" name="password" placeholder="Enter Password Here" />
 
         <input type="submit" value="Login" />
+    </form>
 </div>
 
 {% endblock content %}
