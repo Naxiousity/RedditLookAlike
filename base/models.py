@@ -16,7 +16,7 @@ class Room(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200) #Character Field with max length of 200
     description = models.TextField(null=True, blank=True) #Database can be blank; Form can be blank 
-    #participants =
+    participants = models.ManyToManyField(User, related_name='participants', blank=True)
     updated = models.DateTimeField(auto_now=True) #when the room was updated
     created = models.DateTimeField(auto_now_add=True) #when the room was created
 
