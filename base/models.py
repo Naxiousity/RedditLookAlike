@@ -35,7 +35,10 @@ class Message(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE) #Database, One to Many / models.CASCADE means that deleting all the messages in the room if you delete it
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True) #when the room was updated
-    created = models.DateTimeField(auto_now_add=True) #when the room was created
+    created = models.DateTimeField(auto_now_add=True) #when the room was created\
+
+    class Meta:
+        ordering = ['-updated', '-created'] #descending order
 
     def __str__(self):
-        return self.body[0:50] #Only the first 50 characters can be seen in the preview
+        return self.body[0:50] #Only the first 50 characters can be seen in the preview of the recent activity column
