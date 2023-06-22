@@ -22,7 +22,7 @@ I would like to thank the following resources and tutorials that helped me in th
 - Django documentation
 - YouTube tutorials by Dennis Ivy and Corey Schafer
 
-##Contact
+## Contact
 
 If you have any questions or feedback, feel free to reach out to me:
 ### Email: francisraut12@gmail.com
