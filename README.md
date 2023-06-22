@@ -15,7 +15,7 @@ MangaWot is my first passion website developed using Python and Django that show
 - CSS
 - JavaScript
 
-##Acknowledgements
+## Acknowledgements
 
 I would like to thank the following resources and tutorials that helped me in the development of MangaWot:
 
